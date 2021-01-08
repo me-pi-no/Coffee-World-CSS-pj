@@ -1,0 +1,390 @@
+*{
+	font-family: 'prepareFont2b';
+	margin: 0;
+	padding: 0;
+}
+
+/*****************************************/
+
+/* for main logo */
+
+div#logo img{
+	width: 70px;
+	height: 70px;
+	float: left;
+	padding-right: 15px;
+}
+
+div#logo h1{
+	font-family:'prepareFont2c';
+	font-size: 45px;
+	padding-top: 7px;
+}
+
+div#logo{
+	margin: 0px 500px;
+	margin-top: 10px;
+}
+
+/*****************************************/
+
+/* to clear float */
+.clear {
+	clear: both;
+}
+
+/*************************************************************/
+
+/* Navbar */
+
+div#navbar a{
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+	/*font-family: prepareFont2d; */
+	font-size: 17px;
+	letter-spacing: 2px;
+}
+
+div#navbar a.active, div#navbar a:hover{
+	border-bottom: 2px solid #ddaa20;
+	/*background-color: #ececec;*/
+}
+
+div#navbar ul li{
+	display: inline;
+	line-height: 60px;
+	padding: 0px 20px;
+}
+
+div#navbar{
+	background-color: #413839; /*3B3131*/
+	margin-top: 10px;
+}
+
+div#navbar ul{
+	padding: 0px 50px;
+}
+
+/********/
+/* adding in nav more*/
+
+div#navbar ul li a,
+div#navbar ul li a:after,
+div#navbar ul li a:before {
+	transition: all .5s;
+}
+
+/* stroke */
+div#navbar ul li a,{
+	position: relative;
+}
+
+div#navbar ul li a:after{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 0%;
+	content: '.';
+	color: transparent;
+	background: #
+	border-bottom: 2px solid #ddaa20;
+	height: 1px;
+}
+
+div#navbar ul li a:hover:after {
+	width: 100%;
+}
+
+/*************************************************************/
+
+/* Banner Photo*/
+
+div#banner img{
+	width: 100%;
+	height: 450px;
+	object-fit: cover;
+}
+
+div#banner i{
+	position: absolute;
+	top: 30%;
+	left: 48%;
+	font-size: 86px;
+	color: #ddaa20;
+	/*margin: 0 40%;*/
+}
+
+div#banner div.quote{
+	position: absolute;
+	top: 50%;
+	left: 27%;
+	background-color: rgba(255,255,255,0.5);
+	padding: 30px;
+	font-size: 20px;
+	font-weight: bold;
+	border-radius: 10px;
+}
+
+/*************************************************************/
+
+/* Body */
+
+
+/*	<div id="body">
+		<h1>What we offer!</h1>
+		<hr>
+		<div class="lorem">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+	</div>*/
+
+div#body {
+	margin: 50px 120px;
+}
+
+div#body h1{
+	/*margin: 40px 0;*/
+	/*margin: 50px auto;*/
+	/*padding: 50px auto;*/
+	margin: 0 430px;
+}
+
+div#body div.lorem{
+	margin-top: 40px;
+	text-align: justify; 
+}
+
+div#body hr{
+	margin: 0 250px;
+}
+
+/********************************************************************/
+/* own grid */
+
+div.gridOne{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	margin-top: 40px;
+	margin-right: 120px;
+	margin-left: 120px;
+}
+
+div.gridOne div{
+	color: black;
+	text-align: center;
+	padding: 20px;
+}
+
+div.gridOne i{
+	font-size: 70px;
+}
+
+div.gridOne div p {
+	text-align: justify;
+}
+
+div.gridOne div.title_p{
+	font-size: 25px;
+}
+
+/********************************************************************/
+
+/*div#offer,*/ div#shop, div#special{
+	/*margin: 120px 0px;*/
+	text-align: center;
+	padding: 0 150px;
+	padding-top: 50px;
+}
+
+/*div#offer h1,*/ div#shop h1, div#special h1{
+	color: #ddaa20;
+	font-size: 50px;
+	margin-bottom: 20px;
+}
+
+/*div#offer p {
+	font-size: 15px;
+}*/
+
+/*div#offer hr,*/ div#shop hr, div#special hr{
+	height: 1px;
+	border: none;
+	color: #000;
+	background-color: #000;
+	width: 50%;
+	text-align: center;
+	margin: 50px auto;
+}
+
+/*div#offer div.offer_column{
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-column-gap: 50px;
+	margin-top: 50px;
+}*/
+
+/*div#offer div.offer_column i {
+	font-size: 50px;
+	color: #ddaa20;
+	background-color: black;
+	padding: 18px;
+	border-radius: 50%;
+}*/
+
+/*div#offer div.offer_column h3{
+	margin: 30px 0px;
+	font-size: 30px;
+	opacity: 0.7;
+	text-transform: uppercase;
+}*/
+
+/*div#offer div.offer_column p, {
+	margin-top: 15px;
+}
+*/
+div#shop img{
+	width: 300px;
+	height: 300px;
+	object-fit: cover;
+	border-radius: 15px;
+}
+
+div#shop div.shop_column{
+	display: grid;
+	grid-template-columns: auto auto;
+	padding-bottom: 30px;
+}
+
+div#shop div.shop_column div.shop_two h3{
+	text-align: left;
+	font-family: ;
+	padding-left: 30px;
+	margin-top: 20px;
+}
+
+div#shop div.shop_column div.shop_two p, div#special p{
+	text-align: justify;
+	font-size: 15px;
+	padding: 30px;
+}
+
+/************************************/
+
+/* special */
+
+div#special div.special_photos {
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-column-gap: 50px;
+	padding: 50px 0px;
+}
+
+div#special div.special_photos div.sp_photo_one img{
+	width: 600px;
+	height: 500px;
+	display: block;
+	object-fit: cover;
+	border-radius: 5%;
+}
+
+div#special div.special_photos div.sp_photo_two img{
+	width: 360px;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 5%;
+}
+
+div#special div.special_photos div.sp_photo_two div.sp_photo_three img{
+	width: 180px;
+	height: 300px;
+	border-radius: 5%;
+}
+
+/***********************************************************************/
+
+/* Daily Menu */
+
+div#daily_menu h1{
+	margin: 0 520px;
+	margin-top: 50px;
+	padding: 0 22px;
+	color: #ddaa20;
+	font-size: 50px;
+}
+
+div#daily_menu hr{
+	height: 1px;
+	border: none;
+	color: #000;
+	background-color: #000;
+	width: 50%;
+	/*text-align: center;*/
+	margin: 50px auto;
+}
+
+div#daily_menu p{
+	margin: 0 160px;
+	margin-bottom: 70px;
+	text-align: justify;
+}
+
+div.menu_col_one img{
+	width: 300px;
+	height: 380px;
+	border-radius: 5%;
+	/*padding-right: 550px;*/
+}
+
+div#daily_menu div.sub_dMenu{
+	display: grid;
+	grid-template-columns: auto auto;
+	/*padding-bottom: 30px;*/
+	margin: 0 160px;
+}
+
+div#daily_menu div.sub_dMenu div.menu_col_two span{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+div#daily_menu div.sub_dMenu div.menu_col_two li{
+	padding: 20px 0;
+}
+
+div#daily_menu div.sub_dMenu div.menu_col_two li:nth-child(1){
+	margin-top: 20px;
+}
+
+/***********************************************************************/
+
+/* footer */
+
+div#cw_footer {
+	display: grid;
+	grid-template-columns: auto auto;
+
+	background-color: black;
+	color: white;
+	margin-top: 100px;
+	padding: 10px 0;
+}
+
+div#cw_footer div.rText{
+	text-align: right;
+}
+
+div#cw_footer div.lText{
+	padding-left: 10px;
+}
+
+div#cw_footer div.rText{
+	padding-right: 10px;
+}

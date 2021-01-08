@@ -1,0 +1,23 @@
+
+@font-face{
+	font-family: 'prepareFont2a';
+	src: url('fonts/static/Caveat-Bold.ttf');
+}
+
+@font-face{
+	font-family: 'prepareFont2b';
+	src: url('fonts/font2a/ABeeZee-Italic.ttf');
+}
+		
+@font-face{
+	font-family: 'prepareFont2c';
+	src: url('fonts/font2c/static/DancingScript-Bold.ttf');
+}
+
+/* totally italic */
+@font-face{
+	font-family: 'prepareFont2d';
+	src: url('fonts/font2b/Sacramento-Regular.ttf');
+}
+
+
